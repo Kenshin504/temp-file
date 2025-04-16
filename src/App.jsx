@@ -9,6 +9,7 @@ import Sales from "./pages/Sales";
 import Account from "./pages/Account";
 import About from "./pages/About";
 import Layout from "./components/Layout";
+import NotFoundPage from "./pages/NotFoundPage";
 import "./App.css";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/sales" element={<Sales />} />
           <Route path="/account" element={<Account />} />
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>
     </UserProvider>
