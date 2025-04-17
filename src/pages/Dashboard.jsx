@@ -4,6 +4,7 @@ import BarCharts from "../components/BarChart";
 import PieCharts from "../components/PieChart";
 import AreaCharts from "../components/AreaChart";
 import LineCharts from "../components/LineChart";
+import KeyMetrics from "../components/KeyMetrics";
 import "../styles/pages.css";
 
 function Dashboard() {
@@ -30,6 +31,9 @@ function Dashboard() {
   return (
     <Layout>
       <h1>Sales Report</h1>
+
+      <KeyMetrics stockData={stocks} />
+
       <div className="container-dashboard fade-in">
         <div className="card-graph">
           <BarCharts stockData={stocks} />
